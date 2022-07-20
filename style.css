@@ -29,7 +29,7 @@
 }
 
 .intro > .text {
-  font-size: 4rem;
+  font-size: 5vw;
   font-weight: 950;
   font-style: normal;
   color: #000;
@@ -62,9 +62,9 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   * {
-    letter-spacing: -6px;
+    letter-spacing: -0.3rem;
   }
 
   .intro {
@@ -72,6 +72,6 @@
   }
 
   .intro > .text {
-    font-size: 3rem;
+    font-size: 7vw;
   }
 }
