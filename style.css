@@ -1,0 +1,77 @@
+:root {
+  --globalFont: "NimbusSanLRegular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--globalFont);
+  /* font-weight: normal; */
+  /* font-style: normal; */
+  letter-spacing: -0.7rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px;
+}
+
+.intro > .pic {
+  padding: 50px 0 0 0;
+  animation: slideFromTop 1.5s ease-out;
+}
+
+.intro > .pic > img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.intro > .text {
+  font-size: 4rem;
+  font-weight: 950;
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  animation: slideFromRight 1.5s ease-out;
+  flex-shrink: 3;
+}
+
+/* Animations */
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  * {
+    letter-spacing: -6px;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro > .text {
+    font-size: 3rem;
+  }
+}
