@@ -202,6 +202,7 @@ p {
 .innerText h4 span {
   background: linear-gradient(-45deg, #43c0ff, #43c0ff, #ff91bf, #ff91bf);
   background-size: 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animatedText 5s ease-in-out infinite;
@@ -226,19 +227,19 @@ p {
 /* ****** BREAKPOINTS ****** */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   ...;
-}
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   ...;
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   ...;
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 912px) {
@@ -249,6 +250,6 @@ p {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   ...;
-}
+} */
