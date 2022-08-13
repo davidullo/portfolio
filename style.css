@@ -244,7 +244,7 @@ p {
 @media only screen and (max-width: 912px) {
   .main .text {
     padding-right: 0;
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
   }
 }
 
