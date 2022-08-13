@@ -210,6 +210,10 @@ p {
   -webkit-animation: animatedText 5s ease-in-out infinite;
 }
 
+.construction {
+  color: #ffc400;
+}
+
 /* ****** ANIMATIONS ****** */
 
 @keyframes animatedText {
