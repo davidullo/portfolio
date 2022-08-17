@@ -85,7 +85,7 @@
 }
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -95,6 +95,7 @@ html {
 }
 
 body {
+  margin: 20px;
   font-family: "Inter";
   font-size: 1.6rem;
   /* line-height: -3.6; */
@@ -106,39 +107,39 @@ h1 {
   font-size: 4.4rem;
   font-weight: 800;
   /* line-height: 2.4; */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   letter-spacing: -0.18rem;
 }
 
 h2 {
   font-size: 2rem;
   /* line-height: 2; */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   letter-spacing: -0.15rem;
 }
 
 h3 {
   font-size: 1.6rem;
   /* line-height: 1.6; */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   letter-spacing: -0.1rem;
 }
 
 h4 {
   font-size: 1.4rem;
   /* line-height: 1.4; */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   letter-spacing: -0.1rem;
 }
 
 p {
   font-size: 1.2rem;
   /* line-height: 1.2; */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
   letter-spacing: -0.1rem;
 }
 
-.lineHeight {
+/* .lineHeight {
   line-height: 90%;
 }
 
@@ -158,11 +159,6 @@ p {
   padding-right: 4rem;
 }
 
-/* .main .text h2 span {
-  font-weight: 900;
-  font-size: 3.4rem;
-} */
-
 .main .text h1,
 h2,
 h3,
@@ -178,13 +174,11 @@ p {
 .main .profile .image {
   background-image: url("assets/photos/profile.JPG");
   height: 800px;
-  /* width: 600px; */
   width: 100%;
   min-width: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
 }
 
 .navbar {
@@ -212,6 +206,137 @@ p {
 
 .construction {
   color: #ffc400;
+} */
+
+.navbar,
+.text,
+.profile,
+.skills,
+.projects,
+.footer {
+  transition: transform 0.25s, box-shadow 0.3s;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  color: white;
+}
+
+.navbar:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.text {
+  grid-area: textArea;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  color: black;
+}
+
+.text:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.text .shade {
+  background: linear-gradient(-45deg, #43c0ff, #43c0ff, #ff91bf, #ff91bf);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedText 5s ease-in-out infinite;
+  -moz-animation: animatedText 5s ease-in-out infinite;
+  -webkit-animation: animatedText 5s ease-in-out infinite;
+}
+
+.italy:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    -45deg,
+    #ff0000,
+    #ff0000,
+    white,
+    white,
+    #008c36,
+    #008c36
+  );
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedText 2s ease-in-out infinite;
+  -moz-animation: animatedText 2s ease-in-out infinite;
+  -webkit-animation: animatedText 2s ease-in-out infinite;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: red;
+  color: white;
+}
+
+.profile:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.skills {
+  grid-area: skills;
+  background-color: lightgreen;
+  color: black;
+}
+
+.skills:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.projects {
+  grid-area: projects;
+  background-color: rgb(236, 255, 128);
+  color: black;
+}
+
+.projects:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+  color: black;
+}
+
+.footer:hover {
+  transform: scale(1.015);
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.container {
+  height: 200vh;
+  /* justify-items: stretch; */
+  /* justify-content: center; */
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 1fr 0.5fr 120px;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "textArea textArea profile profile"
+    "skills skills projects projects"
+    "footer footer footer footer";
 }
 
 /* ****** ANIMATIONS ****** */
@@ -246,12 +371,12 @@ p {
 } */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 912px) {
+/* @media only screen and (max-width: 912px) {
   .main .text {
     padding-right: 0;
     padding-bottom: 50px;
   }
-}
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {
