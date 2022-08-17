@@ -215,6 +215,7 @@ p {
 .projects,
 .footer {
   transition: transform 0.25s, box-shadow 0.3s;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -282,6 +283,9 @@ p {
   grid-area: profile;
   background-color: red;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile:hover {
@@ -293,6 +297,9 @@ p {
   grid-area: skills;
   background-color: lightgreen;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills:hover {
@@ -304,6 +311,9 @@ p {
   grid-area: projects;
   background-color: rgb(236, 255, 128);
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects:hover {
@@ -315,6 +325,12 @@ p {
   grid-area: footer;
   background-color: lightgray;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer:hover {
