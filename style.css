@@ -239,7 +239,7 @@ p {
   /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
