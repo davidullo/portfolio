@@ -225,6 +225,7 @@ p {
   align-items: center;
   background-color: blue;
   color: white;
+  padding: 0 25px;
 }
 
 .navbar:hover {
@@ -254,12 +255,12 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animatedText 5s ease-in-out infinite;
-  -moz-animation: animatedText 5s ease-in-out infinite;
-  -webkit-animation: animatedText 5s ease-in-out infinite;
+  animation: animatedText 4s ease-in-out infinite;
+  -moz-animation: animatedText 4s ease-in-out infinite;
+  -webkit-animation: animatedText 4s ease-in-out infinite;
 }
 
-.italy:hover {
+/* .italy:hover {
   cursor: pointer;
   background: linear-gradient(
     -45deg,
@@ -277,6 +278,16 @@ p {
   animation: animatedText 2s ease-in-out infinite;
   -moz-animation: animatedText 2s ease-in-out infinite;
   -webkit-animation: animatedText 2s ease-in-out infinite;
+} */
+
+.innerText h1 {
+  font-size: 12rem;
+}
+
+.innerText h2 {
+  font-size: 4rem;
+  line-height: 100%;
+  color: rgb(160, 160, 160);
 }
 
 .profile {
@@ -298,13 +309,26 @@ p {
   background-color: lightgreen;
   color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
   align-items: center;
+  padding: 30px;
 }
 
 .skills:hover {
   transform: scale(1.015);
   box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  gap: 30px;
 }
 
 .projects {
