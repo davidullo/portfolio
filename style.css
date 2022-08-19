@@ -396,7 +396,6 @@ p {
 
 .footer .links a {
   color: white;
-  font-size: 2rem;
 }
 
 .footer .buttons a {
@@ -456,7 +455,7 @@ p {
   column-gap: 20px;
   row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+  grid-template-rows: 0.1fr 0.7fr 0.5fr 0.1fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "textArea textArea profile profile"
@@ -522,15 +521,22 @@ p {
 
 /* ****** BREAKPOINTS ****** */
 
+/* Extra large devices (large laptops and desktops, 1640px and down) */
+@media only screen and (max-width: 1640px) {
+  html {
+    font-size: 85%;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 55%;
   }
 
-  /* html .navbar .logo {
-    font-size: 85%;
-  } */
+  body {
+    margin: 50px 20px;
+  }
 
   .container {
     grid-template-columns: 1fr;
@@ -551,40 +557,24 @@ p {
     height: 60px;
     width: 60px;
   }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  html {
-    font-size: 83.75%;
+  .footer {
+    padding-top: 20px;
+    flex-direction: column;
   }
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 1fr 1fr 0.5fr 0.5fr 0.3fr;
-    grid-template-areas:
-      "navbar"
-      "textArea"
-      "profile"
-      "skills"
-      "projects"
-      "footer";
-  }
-} */
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 62.5%;
+  .footer a {
+    font-size: 1.4rem;
+    padding: 20px 15px;
   }
-  /* .main .text {
-    padding-right: 0;
-    padding-bottom: 50px;
-  } */
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1280px) {
-  html {
-    font-size: 125%;
+  .footer .buttons a {
+    padding: 10px 15px;
+    border-radius: 50px;
+  }
+
+  .buttons,
+  .links {
+    gap: 10px;
   }
 }
