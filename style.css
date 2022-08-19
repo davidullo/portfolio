@@ -260,9 +260,9 @@ p {
   width: 85px;
 }
 
-svg {
-  max-height: 100%;
-  max-width: 100%;
+.logo img {
+  max-height: 85px;
+  max-width: 85px;
 }
 
 .text {
