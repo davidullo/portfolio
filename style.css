@@ -260,6 +260,11 @@ p {
   width: 85px;
 }
 
+svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .text {
   grid-area: textArea;
   display: flex;
