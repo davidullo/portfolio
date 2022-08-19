@@ -320,11 +320,11 @@ p {
 
 .skills {
   grid-area: skills;
-  background-color: lightgreen;
-  color: black;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 3rem;
   align-items: center;
   padding: 30px;
@@ -343,6 +343,7 @@ p {
   align-items: center;
   font-size: 6rem;
   gap: 30px;
+  padding: 0 60px;
 }
 
 .projects {
