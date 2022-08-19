@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   /* line-height: 2; */
   /* margin-bottom: 1.2rem; */
   letter-spacing: -0.15rem;
@@ -233,6 +233,10 @@ p {
   box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
 }
 
+.navbar .logo {
+  font-size: 6rem;
+}
+
 .text {
   grid-area: textArea;
   display: flex;
@@ -297,6 +301,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("assets/photos/profile.JPG");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .profile:hover {
@@ -368,10 +376,10 @@ p {
   /* justify-content: center; */
   align-content: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px 1fr 0.5fr 120px;
   column-gap: 20px;
   row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.15fr 1fr 0.5fr 0.3fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "textArea textArea profile profile"
@@ -396,29 +404,63 @@ p {
 /* ****** BREAKPOINTS ****** */
 
 /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {
-  ...;
-} */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  ...;
-} */
+  /* html .navbar .logo {
+    font-size: 85%;
+  } */
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr 0.5fr 0.5fr 0.3fr;
+    grid-template-areas:
+      "navbar"
+      "textArea"
+      "skills"
+      "projects"
+      "footer";
+  }
+
+  .profile {
+    display: none;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {
-  ...;
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (max-width: 912px) {
-  .main .text {
-    padding-right: 0;
-    padding-bottom: 50px;
+  html {
+    font-size: 83.75%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 0.5fr 0.5fr 0.3fr;
+    grid-template-areas:
+      "navbar"
+      "textArea"
+      "profile"
+      "skills"
+      "projects"
+      "footer";
   }
 } */
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  /* .main .text {
+    padding-right: 0;
+    padding-bottom: 50px;
+  } */
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-  ...;
-} */
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 125%;
+  }
+}
