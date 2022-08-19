@@ -245,9 +245,6 @@ p {
   align-items: center;
 }
 
-.intro .write {
-}
-
 .navbar .logo {
   display: flex;
   align-items: center;
@@ -361,7 +358,7 @@ p {
   align-items: center;
   font-size: 6rem;
   gap: 30px;
-  padding: 0 60px;
+  padding: 0 80px;
 }
 
 .projects {
