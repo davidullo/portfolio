@@ -139,6 +139,14 @@ p {
   letter-spacing: -0.1rem;
 }
 
+a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  /* line-height: 1.4; */
+  /* margin-bottom: 1.2rem; */
+  letter-spacing: -0.1rem;
+}
+
 /* .lineHeight {
   line-height: 90%;
 }
@@ -230,10 +238,10 @@ p {
   /* z-index: 5; */
 }
 
-.navbar:hover {
+/* .navbar:hover {
   transform: scale(1.015);
   box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
-}
+} */
 
 /* .navbar .logo {
   font-size: 6rem;
@@ -377,20 +385,67 @@ p {
 
 .footer {
   grid-area: footer;
-  background-color: lightgray;
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 50px;
+  background-color: rgb(1, 0, 255);
+  color: black;
 }
 
-.footer:hover {
+.footer .links a {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer .buttons a {
+  background-color: white;
+  color: rgb(1, 0, 255);
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.buttons,
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* .buttons a {
+} */
+
+.buttons a:hover {
+  animation: shake 0.5s ease-in-out;
+  -moz-animation: shake 0.5s ease-in-out;
+  -webkit-animation: shake 0.5s ease-in-out;
+}
+
+.links a:hover {
+  animation: shake 0.5s ease-in-out;
+  -moz-animation: shake 0.5s ease-in-out;
+  -webkit-animation: shake 0.5s ease-in-out;
+}
+
+.buttons .bi-envelope {
+  padding-right: 15px;
+}
+
+.buttons .bi-download {
+  padding-right: 15px;
+}
+
+.buttons .CV {
+  font-weight: 800;
+}
+
+/* .footer:hover {
   transform: scale(1.015);
   box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
-}
+} */
 
 .container {
   height: 200vh;
@@ -401,7 +456,7 @@ p {
   column-gap: 20px;
   row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.1fr 1fr 0.5fr 0.3fr;
+  grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
   grid-template-areas:
     "navbar navbar navbar navbar"
     "textArea textArea profile profile"
@@ -438,6 +493,21 @@ p {
 
 /* ****** ANIMATIONS ****** */
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(6deg);
+  }
+  40%,
+  80% {
+    transform: rotate(-6deg);
+  }
+}
+
 @keyframes animatedText {
   0% {
     background-position: 0px 50%;
@@ -464,7 +534,7 @@ p {
 
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 0.5fr 0.5fr 0.5fr 0.3fr;
+    grid-template-rows: 0.08fr 0.5fr 0.5fr 0.5fr 0.08fr;
     grid-template-areas:
       "navbar"
       "textArea"
