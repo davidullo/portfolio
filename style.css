@@ -223,9 +223,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
+  background-color: rgb(1, 0, 255);
   color: white;
-  padding: 0 15px;
+  padding: 0 25px;
   /* position: fixed; */
   /* z-index: 5; */
 }
@@ -243,7 +243,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .intro .write {
@@ -450,7 +449,7 @@ p {
 
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 0.5fr 0.5fr 0.5fr 0.3fr;
+    grid-template-rows: 0.08fr 0.5fr 0.5fr 0.5fr 0.3fr;
     grid-template-areas:
       "navbar"
       "textArea"
@@ -461,6 +460,11 @@ p {
 
   .profile {
     display: none;
+  }
+
+  .navbar .logo {
+    height: 60px;
+    width: 60px;
   }
 }
 
