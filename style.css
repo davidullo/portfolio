@@ -467,7 +467,7 @@ p {
 }
 
 .copy p,
-a {
+.copy a {
   font-size: 1rem;
   color: black;
   text-align: center;
