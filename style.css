@@ -265,6 +265,21 @@ p {
   max-width: 85px;
 }
 
+.blog {
+  margin: 0 30px;
+}
+
+.blog a {
+  text-decoration: none;
+  color: white;
+}
+
+.blog a:hover {
+  animation: shake 0.5s ease-in-out;
+  -moz-animation: shake 0.5s ease-in-out;
+  -webkit-animation: shake 0.5s ease-in-out;
+}
+
 .text {
   grid-area: textArea;
   display: flex;
