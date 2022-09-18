@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -17,147 +17,201 @@
     <link rel="icon" type="image/x-icon" href="assets/icon/DB_Logo.ico" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="navbar">
-          <div class="intro">
-            <div class="logo">
-              <img src="assets/svg/DB_Logo_blue.svg" alt="logo" />
-            </div>
-            <div class="blog">
-              <a href="https://davidullo.github.io/" target="_blank"
-                ><h3>Blog</h3></a
-              >
-            </div>
-          </div>
-          <div class="write"><h2>Davide Barbieri.</h2></div>
-        </div>
-        <div class="text">
-          <div class="innerText">
-            <h1>Hi!</h1>
-            <h2>I'm a <span class="shade">Full Stack</span></h2>
-            <h2>Web Developer</h2>
-            <h2>From <span class="italy">Italy</span></h2>
+    <div class="p-4">
+      <div
+        class="flex justify-between px-6 items-center bg-neonblue text-white h-20 rounded-lg"
+      >
+        <div>
+          <div class="logo">
+            <img
+              class="w-20 h-20"
+              src="assets/svg/DB_Logo_blue.svg"
+              alt="logo"
+            />
           </div>
         </div>
-        <div class="profile"></div>
-        <div class="skills reveal">
-          <div class="cell skillsTitle"><h1>Skills</h1></div>
-          <div class="languages">
-            <div class="cell javascript">
-              <i class="devicon-javascript-plain"></i>
-            </div>
-            <div class="cell typescript">
-              <i class="devicon-typescript-plain"></i>
-            </div>
-            <div class="cell angular">
-              <i class="devicon-angularjs-plain"></i>
-            </div>
-            <div class="cell java">
-              <i class="devicon-java-plain"></i>
-            </div>
-            <div class="cell npm">
-              <i class="devicon-npm-original-wordmark"></i>
-            </div>
-            <div class="cell git">
-              <i class="devicon-git-plain"></i>
-            </div>
-            <div class="cell sass">
-              <i class="devicon-sass-original"></i>
-            </div>
-            <div class="cell postgresql">
-              <i class="devicon-postgresql-plain"></i>
-            </div>
-          </div>
-        </div>
-        <div class="projects reveal">
-          <h1>Projects</h1>
-          <ul>
-            <li>
-              <h3>
-                <a
-                  href="https://github.com/davidullo/wd0122-davide-barbieri/tree/master/Capstone"
-                  target="_blank"
-                  >Lidi Web App</a
-                >
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <a
-                  href="https://github.com/davidullo/JS-Calculator"
-                  target="_blank"
-                  >JS Calculator & Memo</a
-                >
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <a
-                  href="https://github.com/davidullo/RestaurantPage"
-                  target="_blank"
-                  >Restaurant Page</a
-                >
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <a
-                  href="https://github.com/davidullo/Bootstrap_LandingPage"
-                  target="_blank"
-                  >Startup Landing Page</a
-                >
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <a
-                  href="https://github.com/davidullo/JS-CRUD_app"
-                  target="_blank"
-                  >JavaScript CRUD</a
-                >
-              </h3>
-            </li>
-          </ul>
-          <p>
-            For more <strong>projects</strong>, check out my
-            <a href="https://github.com/davidullo" target="_blank">Github</a>.
-          </p>
-        </div>
-        <div class="footer">
-          <div class="buttons">
-            <a href="mailto:davbarbi@gmail.com"
-              ><i class="bi bi-envelope"></i>Let's Talk!</a
+        <div>
+          <h1
+            class="text-xl md:text-4xl font-bold hover:scale-110 transition duration-300 ease-in-out"
+          >
+            <a class="" href="https://blog.davidebarbieri.me/" target="_blank"
+              >Blog</a
             >
-            <a
-              href="assets/files/Davide_Barbieri-resume.pdf"
-              class="CV"
-              target="_blank"
-              ><i class="bi bi-download"></i>CV</a
-            >
-          </div>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/davbarbi/" target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-            <a href="https://github.com/davidullo" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </div>
+          </h1>
         </div>
-        <!-- <canvas id="canvas" width="32" height="32"></canvas> -->
       </div>
-    </main>
-    <div class="copy">
-      <p>&copy; Copyright <span class="date">2022</span>, Davide Barbieri</p>
-      <p>
-        <a href="https://github.com/davidullo/portfolio" target="_blank"
-          >My portfolio is open source</a
+      <div
+        class="contenitore1 flex flex-col sm:flex-row justify-around items-center"
+      >
+        <div
+          class="flex flex-col items-center justify-center bg-white text-black rounded-lg w-full mt-8 mx-8 h-96 md:py-64 xl:py-96 hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-300"
         >
-      </p>
+          <div class="innerText">
+            <h1 class="text-8xl lg:text-9xl font-black">Hi!</h1>
+            <h2 class="text-4xl text-gray-400 font-semibold leading-9">
+              I'm
+              <span class="text-black font-extrabold">Davide Barbieri</span>
+            </h2>
+            <h2 class="text-4xl text-gray-400 font-semibold leading-9">
+              and I'm a <span class="shade font-extrabold">Full Stack</span>
+            </h2>
+            <h2 class="text-4xl text-gray-400 font-semibold leading-9">
+              Web Developer
+            </h2>
+            <h2 class="text-4xl text-gray-400 font-semibold leading-9">
+              From Italy.
+            </h2>
+          </div>
+        </div>
+        <div
+          class="text-white sm:w-4/5 rounded-lg mt-8 mx-8 hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-300"
+        >
+          <img
+            class="object-cover h-full rounded-lg"
+            src="assets/photos/profile.JPG"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-between items-center my-8">
+        <div
+          class="bg-neutral-900 w-full text-white mb-8 sm:mx-8 hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-300 rounded-lg"
+        >
+          <div>
+            <h1 class="text-center text-4xl font-extrabold pt-5">Skills</h1>
+          </div>
+          <div
+            class="skills flex flex-row flex-wrap text-8xl justify-center items-center p-5 px-8"
+          >
+            <div class="flex flex-col sm:flex-row">
+              <div class="cell javascript p-3">
+                <i class="devicon-javascript-plain"></i>
+              </div>
+              <div class="cell typescript p-3">
+                <i class="devicon-typescript-plain"></i>
+              </div>
+              <div class="cell angular p-3">
+                <i class="devicon-angularjs-plain"></i>
+              </div>
+              <div class="cell java p-3">
+                <i class="devicon-java-plain"></i>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row">
+              <div class="cell npm p-3">
+                <i class="devicon-npm-original-wordmark"></i>
+              </div>
+              <div class="cell git p-3">
+                <i class="devicon-git-plain"></i>
+              </div>
+              <div class="cell sass p-3">
+                <i class="devicon-sass-original"></i>
+              </div>
+              <div class="cell postgresql p-3">
+                <i class="devicon-postgresql-plain"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-yellow-300 w-full text-black sm:mx-8 hover:drop-shadow-2xl hover:scale-105 transition ease-in-out duration-300 rounded-lg"
+        >
+          <div>
+            <h1 class="text-center text-4xl font-extrabold pt-5">Projects</h1>
+          </div>
+          <div
+            class="project-list flex flex-col justify-center items-center p-8 font-medium text-2xl"
+          >
+            <ul>
+              <li>
+                <h3>
+                  <a
+                    href="https://github.com/davidullo/wd0122-davide-barbieri/tree/master/Capstone"
+                    target="_blank"
+                    >Lidi Web App</a
+                  >
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <a
+                    href="https://github.com/davidullo/JS-Calculator"
+                    target="_blank"
+                    >JS Calculator & Memo</a
+                  >
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <a
+                    href="https://github.com/davidullo/RestaurantPage"
+                    target="_blank"
+                    >Restaurant Page</a
+                  >
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <a
+                    href="https://github.com/davidullo/Bootstrap_LandingPage"
+                    target="_blank"
+                    >Startup Landing Page</a
+                  >
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <a
+                    href="https://github.com/davidullo/JS-CRUD_app"
+                    target="_blank"
+                    >JavaScript CRUD</a
+                  >
+                </h3>
+              </li>
+            </ul>
+            <div class="more-info mt-5">
+              <p>
+                For more <strong>projects</strong>, check out my
+                <a href="https://github.com/davidullo" target="_blank">Github</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer flex justify-between px-6 items-center bg-neonblue text-white h-36 rounded-lg text-lg sm:text-3xl"
+      >
+        <div class="buttons flex">
+          <a
+            class="bg-white text-neonblue rounded-full px-3 sm:px-6 py-2 mx-1 sm:mx-6 font-bold"
+            href="mailto:davbarbi@gmail.com"
+            ><i class="bi bi-envelope pr-2"></i>Let's Talk!</a
+          >
+          <a
+            class="bg-white text-neonblue rounded-full px-3 sm:px-6 py-2 mx-1 sm:mx-6 font-extrabold"
+            href="assets/files/Davide_Barbieri-resume.pdf"
+            class="CV"
+            target="_blank"
+            ><i class="bi bi-download pr-2"></i>CV</a
+          >
+        </div>
+        <div class="links sm:text-5xl">
+          <a
+            class="social mx-1 sm:mx-4"
+            href="https://www.linkedin.com/in/davbarbi/"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            class="social mx-1 sm:mx-4"
+            href="https://github.com/davidullo"
+            target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+      </div>
     </div>
-    <!-- <script type="module" src="test.js"></script> -->
-    <!-- <script src="gradient.js"></script> -->
-    <script src="script.js"></script>
   </body>
 </html>
